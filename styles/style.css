@@ -1,8 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-.work-sans-normal {
+.work-sans-font {
     font-family: "Work Sans", serif;
     font-optical-sizing: auto;
     font-weight: 400;
+    font-size: 1rem;
     font-style: normal;
+}
+/* font color styles */
+.dark1{
+    color: #131313;
+}
+.dark2{
+    color: #424242;
+}
+.dark3{
+    color: #727272;
+}
+/* shared styles */
+.display-flex {
+    display: flex;
+}
+.nav-container , .banner, main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.btn-primary {
+    background-color: #FF900E;
+    color: #ffffff;
+    border: none;
+    padding: 20px 25px;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+section{
+}
+/* header styles */
+.header-container {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+header img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+main > section{
+    margin-top: 120px;
+}
+
+/* nav styles */
+.nav-container {
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+
+}
+.nav-item {
+    list-style: none;
+}
+.nav-link {
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+/* banner style */
+.banner-content {
+    max-width: 868px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+}
+/* main style */
+/* feature section styles */
+.features {
+    align-items: center;
+}
+.feature-text{
+    max-width: 537px;
+    margin-left: 50px;
+}
+.photo-collage{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.feature-title{
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.ftext-style1{
+    font-weight: 700;
+}
+#ftext-style2{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 562px) {
+   .nav-container,
+   .nav-items,
+   .features{
+        flex-direction: column;
+   }
 }
