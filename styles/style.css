@@ -10,12 +10,15 @@
 /* font color styles */
 .dark1{
     color: #131313;
+    margin: 10px 0px;
 }
 .dark2{
     color: #424242;
+    margin: 10px 0px;
 }
 .dark3{
     color: #727272;
+    margin: 10px 0px;
 }
 /* shared styles */
 .display-flex {
@@ -105,7 +108,7 @@ main > section{
 }
 /* feature that you will love */
 .feature-you-love{
-    align-items: center;
+    /* align-items: center; */
     gap: 100px;
 }
 #fh1{
@@ -138,6 +141,36 @@ main > section{
     font-weight: 700;
     margin: 0px;
 }
+/* some facts styles */
+.fact-container{
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0px;
+}
+.fact-box{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding:50px 40px 40px 40px;
+    text-align: center;
+    width: 160px;
+    height: 160px;
+}
+.fact-title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.fact-desciption{
+    font-size: 1.12rem;
+    font-weight: 600;
+}
+/* sponsor section */
+
+.sponsor-img{
+    filter:grayscale(100%);
+}
+
 /* footer styles */
 
 /* media query */
@@ -145,8 +178,12 @@ main > section{
    .nav-container,
    .nav-items,
    .features,
-   .feature-you-love {
+   .fact-container,
+   .sponsor-container {
         flex-direction: column;
+   }
+   .feature-you-love{
+        flex-direction: column-reverse;
    }
    .photo-collage{
        grid-template-columns: 1fr;
@@ -167,5 +204,8 @@ main > section{
    .fbutton{
         margin-top: 20px;
         margin-left: 0px;
+   }
+   .fact-box{
+        margin: 20px 0px;
    }
 }
