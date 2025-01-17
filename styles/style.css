@@ -96,18 +96,76 @@ main > section{
     font-size: 2.8rem;
     font-weight: 500;
 }
-.ftext-style1{
+#ftext-style1{
     font-weight: 700;
 }
 #ftext-style2{
     color: #FF900E;
     font-weight: 700;
 }
+/* feature that you will love */
+.feature-you-love{
+    align-items: center;
+    gap: 100px;
+}
+#fh1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    padding-left: 21px;
+    border-left: 5px solid #FF900E ;
+}
+.text-box{
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06) ;
+    margin-top: 20px;
+}
+.fbutton{
+    border: none;
+    border-radius: 8px;
+    padding: 40px;
+    background-color: #FF900E;
+    color: #ffffff;
+    margin-top: -100px;
+    margin-left: -50px;
+    font-size: 1.4rem;
+    font-weight: 500;
 
+}
+.fbutton-text{
+    font-size: 4.1rem;
+    font-weight: 700;
+    margin: 0px;
+}
+/* footer styles */
+
+/* media query */
 @media screen and (max-width: 562px) {
    .nav-container,
    .nav-items,
-   .features{
+   .features,
+   .feature-you-love {
         flex-direction: column;
+   }
+   .photo-collage{
+       grid-template-columns: 1fr;
+   } 
+   .feature-text{
+        margin: 0 20px;
+        text-align: center;
+   }
+   .nav-items{
+        text-align: center;
+   } 
+   .image-architect{
+        width: 100%;
+   }
+   .image-area{
+    text-align: center;
+   }
+   .fbutton{
+        margin-top: 20px;
+        margin-left: 0px;
    }
 }
